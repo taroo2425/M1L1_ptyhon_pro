@@ -1,15 +1,12 @@
-meme_dict = {
-            "key" : "value",
-            "CRINGE": "Sesuatu yang sangat aneh atau memalukan",
-            "LOL": "Tanggapan umum terhadap sesuatu yang lucu",
-            "SHEESH" : "sedikit ketidaksetujuan",
-            "CREEPY" : "menakutkan/tidak menyenangkan",
-            "AGGRO"  : "untuk menjadi agresif/marah",
-            "ROLF" : "tanggapan terhadap lelucon"
-            }
-            
-#print(meme_dict["CRINGE"])
+import random
 
-for i in range(len(meme_dict)):
-    meme = input("masukkan key:")
-    print(meme_dict[meme])
+karakter = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+panjang_karakter = input("masukkan sandi:")
+password = ""
+
+for i in range(int(panjang_karakter)):
+    password += random.choice(karakter)
+            
+print(password)
+
+
